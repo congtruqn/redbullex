@@ -7,7 +7,7 @@ ENV HOST 0.0.0.0
 
 COPY package*.json ./
 
-RUN npm install --only=production
+RUN npm install
 
 # Copy the local code to the container
 COPY . .
